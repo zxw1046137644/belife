@@ -1,0 +1,1 @@
+{"version":3,"sources":["../in.js"],"names":[],"mappings":";;AAAA;;;;;;AAEA","file":"in.js","sourcesContent":["import com from './main'\r\n\r\ncom();\r\n"]}
