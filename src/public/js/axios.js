@@ -1,5 +1,7 @@
 var axios = require('axios')
-
+var a=[];
+var b={};
+console.log(b.length)
 // axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 
@@ -14,19 +16,19 @@ var axios = require('axios')
 // }).catch(err => {
 //     console.log(err.data)
 // })
-axios({
-    method: 'get',
-    params: {
-        name: 'zxw',
-        id: 111
-    },
-    url: 'http://localhost:8080/user/uu',
-}).then(
-    res => {
-        console.log(res.data)
-    }).catch(err => {
-    console.log(err.data)
-})
+// axios({
+//     method: 'get',
+//     params: {
+//         name: 'zxw',
+//         id: 111
+//     },
+//     url: 'http://localhost:8080/user/uu',
+// }).then(
+//     res => {
+//         console.log(res.data)
+//     }).catch(err => {
+//     console.log(err.data)
+// })
 // axios.post('http://localhost:8080/user', {
 //     params: {
 //         id: 1111,
