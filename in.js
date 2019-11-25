@@ -21,10 +21,10 @@ var data = {
 
 var params = g.md(data)
 
-console.log(params)
+// console.log(params)
 
-
-g.other(u.URL.url, u.API.index, params)
+g.createInsert();
+// g.other(u.URL.url, u.API.index, params)
 // g.clearCacheKj()
 
 
