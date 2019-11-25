@@ -53,7 +53,7 @@ function md(params) {
 
     return params;
 }
-function createInsert(){
+function createInsert(length){
     '1564383842398D67D8', '', '', '', '38', '0','1', '1', '1', '1', '1', '舒芙蕾2人套餐', '198.00', '168.00', '4.40', '0.00', '0.0000',
 
 
