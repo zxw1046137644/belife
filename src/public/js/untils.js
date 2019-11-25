@@ -6,7 +6,9 @@ function timeSamp() {
     // console.log(timesamp)
     return timesamp;
 }
-
+function rando(i) {
+    return Math.ceil(Math.random(588888)*Math.random(i+155)*10000)
+}
 function clearCacheKj() {
     axios.get('https://t.ssl.jidianhuyu.com/bargain/api_user/z/clear').then(
         res => {
@@ -53,23 +55,21 @@ function md(params) {
 
     return params;
 }
-function createInsert(length){
-    '1564383842398D67D8', '', '', '', '38', '0','1', '1', '1', '1', '1', '舒芙蕾2人套餐', '198.00', '168.00', '4.40', '0.00', '0.0000',
 
-
-
-
-
-
-    console.log('INSERT INTO `bargain`.`user_order` (`order_id`, `group_id`, `out_trade_rand`, `out_refund_no`,' +
-        '`user_id`, `fake_user_id`, `active_type`, `group_type`, `group_master`, `shop_id`, `active_id`, `active_name`,' +
-        '`price_origin`, `price_origin2`, `price_bargain`, `price_subsidy`, `commission`, `amount_actual`,' +
-        '`vip_discount`, `status`, `convert_code`, `convert_at`, `convertible`, `convert_shop_id`, `audit_status`, `created_at`,' +
-        '`payed_at`, `expired_at`, `del`, `prepay_id`, `transaction_id`) VALUES '+'('
-        +'1564383842398D67D8'
-        +', \'\', \'\', \'\', \'38\', \'0\',\'1\', \'1\', \'1\', \'1\', \'1\', \'舒芙蕾2人套餐\', \'198.00\', \'168.00\', \'4.40\', \'0.00\', \'0.0000\','
-        +'\'163.60\', \'1.00\', \'3\', \'\', \'0\', \'3\',\'0\', \'1\', \'1564383842\', \'0\', \'0\', \'0\', \'\', \'\');'
-    )
+function createInsert(length,sysname) {
+    for (let i = 1; i < 2; i++) {
+        console.log('INSERT INTO `bargain`.`user_order` (`order_id`, `group_id`, `out_trade_rand`, `out_refund_no`,' +
+            '`user_id`, `fake_user_id`, `active_type`, `group_type`, `group_master`, `shop_id`, `active_id`, `active_name`,' +
+            '`price_origin`, `price_origin2`, `price_bargain`, `price_subsidy`, `commission`, `amount_actual`,' +
+            '`vip_discount`, `status`, `convert_code`, `convert_at`, `convertible`, `convert_shop_id`, `audit_status`, `created_at`,' +
+            '`payed_at`, `expired_at`, `del`, `prepay_id`, `transaction_id`) VALUES ' + '('
+            + '\'' + 116438384239823123+rando(i) + '\''
+            + ', \'\', \'\', \'\', \'38\', \'0\',\'1\', \'1\', \'1\', \'1\', \'1\', ' +
+            sysname[1]+
+            ', \'198.00\', \'168.00\', \'4.40\', \'0.00\', \'0.0000\','
+            + '\'163.60\', \'1.00\', \'3\', \'\', \'0\', \'3\',\'0\', \'1\', \'1564383842\', \'0\', \'0\', \'0\', \'\', \'\');'
+        )
+    }
 
 
 }

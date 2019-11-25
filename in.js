@@ -19,11 +19,17 @@ var data = {
     "access_token": access_token
 }
 
+var sysname=['广式腊味双拼煲仔饭','【好面道】-牛肉炒拉面（仅限晚餐）','java','python','js'];
 var params = g.md(data)
 
-// console.log(params)
+console.log(Math.floor(1+Math.random()*(4-1+1)))
 
-g.createInsert(20);
+
+
+
+
+// console.log(sysname[3])
+g.createInsert(20,sysname);
 // g.other(u.URL.url, u.API.index, params)
 // g.clearCacheKj()
 
