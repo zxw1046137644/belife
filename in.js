@@ -1,5 +1,7 @@
 var g = require('./src/public/js/untils');
 var u = require('./src/public/js/url');
+var axios = require('axios');
+
 
 var access_id = '123'
 var access_token = '321'
@@ -24,13 +26,23 @@ var params = g.md(data)
 
 console.log(Math.floor(1+Math.random()*(4-1+1)))
 
-
-
+function other(url, api, params) {
+    axios.get(url + api).then(
+        res => {
+            console.log(res.data)
+        }
+    ).catch(
+        err => {
+            console.log(err.data)
+        }
+    )
+}
+other(u.api.url,'/user/hello');
 
 
 // console.log(sysname[3])
-g.createInsert(20,sysname);
-// g.other(u.URL.url, u.API.index, params)
+// g.createInsert(20,sysname);
+// g.other(u.api.url, u.API.index, params)
 // g.clearCacheKj()
 
 
