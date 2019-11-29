@@ -22,12 +22,15 @@ var data = {
 }
 
 var sysname=['广式腊味双拼煲仔饭','【好面道】-牛肉炒拉面（仅限晚餐）','java','python','js'];
+// var params = g.md(data)
 var params = g.md(data)
 
 console.log(Math.floor(1+Math.random()*(4-1+1)))
 
 function other(url, api, params) {
-    axios.get(url + api).then(
+    axios.get(,{
+        params
+    }).then(
         res => {
             console.log(res.data)
         }
