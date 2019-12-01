@@ -27,20 +27,7 @@ var params = g.md(data)
 
 console.log(Math.floor(1+Math.random()*(4-1+1)))
 
-function other(url, api, params) {
-    axios.get(,{
-        params
-    }).then(
-        res => {
-            console.log(res.data)
-        }
-    ).catch(
-        err => {
-            console.log(err.data)
-        }
-    )
-}
-other(u.api.url,'/user/hello');
+
 
 
 // console.log(sysname[3])
