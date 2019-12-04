@@ -12,7 +12,7 @@ var data = {
     "page": '1',
     "lng": '120.10519047117164',
     "lat": '30.307533133810978',
-    "timestamp": g.timeSamp()+500000,
+    "timestamp": g.timeSamp() + 500000,
     // timestamp: 1574004230,
     "location": '1',
     "need_product_type": '0',
@@ -20,14 +20,11 @@ var data = {
     "access_id": access_id,
     "access_token": access_token
 }
-
-var sysname=['广式腊味双拼煲仔饭','【好面道】-牛肉炒拉面（仅限晚餐）','java','python','js'];
+var sysname = ['广式腊味双拼煲仔饭', '【好面道】-牛肉炒拉面（仅限晚餐）', 'java', 'python', 'js'];
 // var params = g.md(data)
 var params = g.md(data)
 
-console.log(Math.floor(1+Math.random()*(4-1+1)))
-
-
+console.log(Math.floor(1 + Math.random() * (4 - 1 + 1)))
 
 
 // console.log(sysname[3])

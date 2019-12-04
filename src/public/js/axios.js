@@ -1,6 +1,6 @@
 var axios = require('axios')
 var a=[];
-var b={};
+var b='有效期至2019-12-31';
 console.log(b.length)
 // axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
